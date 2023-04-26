@@ -1,0 +1,44 @@
+{
+  "name": "about-me-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "format": "npx prettier --write . && npx eslint . --fix",
+    "lint": "npx prettier --check . && npx eslint .",
+    "nodemon": "nodemon index.js\n",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ilyas161/about-me-bot.git"
+  },
+  "author": "ilyas",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.20",
+    "prettier": "2.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "pino": "^8.8.0",
+    "pino-http": "^8.3.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run format"
+    ]
+  }
+}
