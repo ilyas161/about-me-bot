@@ -9,7 +9,7 @@ An <strong>about me bot</strong> program is program, that work in telegram. It i
 <h2>How to run the program?</h2>
 
 If you want to run this program, you need install
-node.js packet.
+node.js packet and create .env file(for example .env.example file).
 After you should write in terminal </br>
 
 `node index.js`
